@@ -32,6 +32,3 @@ jobs:
       - name: yarn build
         run: |
           yarn run build --if-present
-
-      - name: 🤖 deploy on test server
-        run: now --token ${{ secrets.ZEIT_TOKEN }}
